@@ -1,0 +1,95 @@
+{
+  "model_name": "logistic_regression",
+  "threshold": 0.1854,
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "classes": {
+    "0": "malignant",
+    "1": "benign"
+  },
+  "sklearn_version": "1.8.0",
+  "metrics": {
+    "selected_model": "logistic_regression",
+    "selection_rule": "highest 5-fold CV ROC-AUC; scores within 0.005 count as a tie -> simpler model",
+    "cv_roc_auc": {
+      "logistic_regression": 0.9947,
+      "random_forest": 0.9937,
+      "neural_network": 0.9954
+    },
+    "target_malignant_recall": 0.98,
+    "threshold": 0.1854,
+    "test_roc_auc": 0.9957,
+    "test_at_default_threshold_0.5": {
+      "accuracy": 0.9825,
+      "malignant_recall": 0.9524,
+      "malignant_precision": 1.0,
+      "confusion": {
+        "tp_malignant_caught": 40,
+        "fn_malignant_missed": 2,
+        "fp_false_alarm": 0,
+        "tn_benign_ok": 72
+      }
+    },
+    "test_at_tuned_threshold": {
+      "accuracy": 0.9561,
+      "malignant_recall": 0.9524,
+      "malignant_precision": 0.9302,
+      "confusion": {
+        "tp_malignant_caught": 40,
+        "fn_malignant_missed": 2,
+        "fp_false_alarm": 3,
+        "tn_benign_ok": 69
+      }
+    },
+    "test_bootstrap_95ci_at_tuned_threshold": {
+      "accuracy": [
+        0.9123,
+        0.9912
+      ],
+      "malignant_recall": [
+        0.878,
+        1.0
+      ]
+    },
+    "p_malignant_of_cases_missed_at_0.5": [
+      0.0699,
+      0.1103
+    ],
+    "train_test_sizes": [
+      455,
+      114
+    ],
+    "seed": 0,
+    "sklearn_version": "1.8.0"
+  }
+}

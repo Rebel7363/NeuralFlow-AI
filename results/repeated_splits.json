@@ -1,0 +1,94 @@
+{
+  "model": "logistic_regression",
+  "n_splits": 10,
+  "test_size_per_split": 114,
+  "average_per_split": {
+    "threshold": 0.13,
+    "default_missed": 1.2,
+    "default_false_alarms": 0.9,
+    "tuned_missed": 0.5,
+    "tuned_false_alarms": 5.6
+  },
+  "per_split": [
+    {
+      "seed": 0,
+      "threshold": 0.1854,
+      "default_missed": 2,
+      "default_false_alarms": 0,
+      "tuned_missed": 2,
+      "tuned_false_alarms": 3
+    },
+    {
+      "seed": 1,
+      "threshold": 0.1275,
+      "default_missed": 1,
+      "default_false_alarms": 0,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 4
+    },
+    {
+      "seed": 2,
+      "threshold": 0.1035,
+      "default_missed": 2,
+      "default_false_alarms": 0,
+      "tuned_missed": 1,
+      "tuned_false_alarms": 7
+    },
+    {
+      "seed": 3,
+      "threshold": 0.1458,
+      "default_missed": 2,
+      "default_false_alarms": 1,
+      "tuned_missed": 1,
+      "tuned_false_alarms": 6
+    },
+    {
+      "seed": 4,
+      "threshold": 0.2495,
+      "default_missed": 2,
+      "default_false_alarms": 1,
+      "tuned_missed": 1,
+      "tuned_false_alarms": 2
+    },
+    {
+      "seed": 5,
+      "threshold": 0.153,
+      "default_missed": 0,
+      "default_false_alarms": 2,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 5
+    },
+    {
+      "seed": 6,
+      "threshold": 0.0789,
+      "default_missed": 1,
+      "default_false_alarms": 0,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 5
+    },
+    {
+      "seed": 7,
+      "threshold": 0.0702,
+      "default_missed": 1,
+      "default_false_alarms": 3,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 11
+    },
+    {
+      "seed": 8,
+      "threshold": 0.0771,
+      "default_missed": 1,
+      "default_false_alarms": 2,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 6
+    },
+    {
+      "seed": 9,
+      "threshold": 0.083,
+      "default_missed": 0,
+      "default_false_alarms": 0,
+      "tuned_missed": 0,
+      "tuned_false_alarms": 7
+    }
+  ]
+}

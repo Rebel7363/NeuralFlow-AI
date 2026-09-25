@@ -1,0 +1,9 @@
+.git
+.github
+tests
+results
+examples
+__pycache__
+*.pyc
+.pytest_cache
+*.md
